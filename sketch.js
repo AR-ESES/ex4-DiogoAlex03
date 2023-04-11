@@ -16,7 +16,10 @@ function draw() {
     for (let j = 1; j < espAltura; j++) {
       push();
       translate(i * width / espLarg,j * height / espAltura)
-      circle(0, 0, height / espAltura);
+      circle(2, 2, height / espAltura);
+      circle(width / 500 - height /3/4, height /500 - height/500, height/500 );
+	    circle(width / 500 + height /3/4, height /500 - height/500, height/500 );
+      line(width / 500 + height /3/4, height /500 - height/500, height/500 );
       pop();
     }
   }
